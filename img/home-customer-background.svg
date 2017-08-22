@@ -1,0 +1,15 @@
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="100%"
+ height="100%">
+    <defs>
+        <radialGradient id="background-gradient" cx="100%" cy="100%" r="100%">
+            <stop offset="20%" stop-color="#ffe49a" />
+            <stop offset="50%" stop-color="#f4719b" />
+            <stop offset="110%" stop-color="#2b0c93" />
+        </radialGradient>
+    </defs>
+
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#background-gradient)" />
+</svg>
