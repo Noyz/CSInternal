@@ -4,6 +4,10 @@
 		<meta charset="utf-8">
 		<title>Product analytics for product people</title>
 		<link rel="stylesheet" href="stylesheet.css" type="text/css"></link>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" type="text/css">
+
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+		<script type="text/javascript">$(document).ready(function(){  $('section,footer').html('<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac mattis nibh. Praesent fermentum interdum convallis. Suspendisse ullamcorper consectetur consectetur. Sed velit dui, efficitur ut sagittis ut, sodales et justo. Integer quis felis sagittis, ultrices diam at, consectetur quam. Donec vel lorem sagittis, dapibus est non, euismod massa. Sed luctus elementum arcu, vel pretium erat mattis quis. Sed ac porttitor quam. Duis interdum placerat tellus, in egestas justo laoreet id. Curabitur sodales tellus in auctor efficitur. Maecenas porta volutpat erat sit amet pulvinar. Mauris lacus nisi, vehicula a rhoncus id, cursus gravida enim. Nulla lacinia ipsum vitae commodo consequat. Curabitur accumsan hendrerit ornare. Pellentesque efficitur ligula non magna suscipit vestibulum.</p><p>Mauris consequat, mi quis imperdiet convallis, tortor eros elementum massa, ut aliquet nisi ligula et sem. Curabitur convallis felis at quam commodo, ac fermentum dolor lobortis. Praesent eleifend sapien eu augue viverra porta. Curabitur ac massa iaculis, auctor sem et, rutrum sapien. Aliquam quis laoreet purus. Mauris et lacinia metus. Maecenas consectetur mauris est. Nunc pulvinar orci dapibus, egestas nibh eu, venenatis ex.</p><p>Aliquam justo ipsum, semper ac lectus non, tincidunt efficitur neque. Curabitur fringilla porttitor bibendum. Aliquam ac turpis eget nibh consequat auctor ut vel mauris. Curabitur finibus laoreet risus, ut finibus est viverra a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam rhoncus ut nibh a tempor. Nam dapibus sapien nibh, et consectetur massa porttitor condimentum. Vestibulum gravida tellus nulla, non tincidunt sem scelerisque in. Fusce id ornare arcu, et rhoncus diam. Aenean placerat augue quis ex convallis, ut vehicula erat volutpat. Etiam dignissim ornare pharetra. Phasellus pulvinar ante quis ligula mollis porttitor. Phasellus magna tellus, commodo eget interdum ac, scelerisque ut lectus.</p><p>Nam lacinia efficitur purus at molestie. Donec eget felis ullamcorper, vulputate mi ac, fermentum odio. Aliquam convallis sodales iaculis. Maecenas at libero nibh. Vivamus non quam in nibh luctus aliquam. Phasellus dapibus, diam facilisis varius rutrum, nulla erat eleifend ipsum, et consectetur tortor nunc in velit. Sed lacus tortor, posuere vitae lectus dignissim, varius sagittis metus. Sed condimentum, ligula nec dignissim rutrum, ex sapien malesuada metus, sagittis rutrum odio mauris et arcu. Nulla viverra mi eu magna eleifend gravida sed posuere erat. Nunc tortor ligula, rutrum sit amet sagittis vitae, condimentum nec orci. Curabitur maximus dui ac diam fringilla tristique. Morbi vehicula ornare volutpat. Aliquam fermentum, neque vitae tempus accumsan, tortor dolor suscipit orci, in ultricies magna metus id velit. Pellentesque efficitur cursus purus, a venenatis enim consequat sit amet. Quisque rhoncus turpis vitae mi faucibus tincidunt. Sed eget venenatis libero.</p>') });</script>
 	</head>
 	<body>
 		<header class="header" role="banner">
@@ -13,7 +17,7 @@
 				</h2>
 			</a>
 			<nav class="headernav" role="navigation">
-				<div class="headernav__burgermenu"><!-- Burger menu -->
+				<div class="headernav__burgermenu">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -51,32 +55,37 @@
 					<input type="email" placeholder="Enter your email..." class="signupform__field ">
 					<input type="submit" value="get started" class="signupform__submit btn btn--submit">
 				</form>
-				<!-- <figure class="hero__bottompicture">
+				<figure class="hero__bottompicture">
 					<img src="img/hero-image.png" width="100%" alt="devices-showing-statistiques">
-				</figure> -->
+				</figure>
 			</section>
 			<section class="hpadvantages">
-				<div class="hpadvantages__item hpadvantages__item--journey">
-					<h3>Understand every user's journey</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum sapien magna, sit amet congue ante imperdiet non.</p>
-				</div>
-				<div class="hpadvantages__item hpadvantages__item--answers">
-					<h3>Build faster with instant answers</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum sapien magna, sit amet congue ante imperdiet non.</p>
-				</div>
-				<div class="hpadvantages__item hpadvantages__item--insights">
-					<h3>Unlock insights for everyone</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum sapien magna, sit amet congue ante imperdiet non.</p>
-				</div>
-					
-				<div class="separator"></div>
+				<div class="hpadvantages__container">
+					<div class="hpadvantages____container__item hpadvantages____container__item--journey">
+						<h3>Understand every user's journey</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum sapien magna, sit amet congue ante imperdiet non.</p>
+					</div>
+					<div class="hpadvantages____container__item hpadvantages____container__item--answers">
+						<h3>Build faster with instant answers</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum sapien magna, sit amet congue ante imperdiet non.</p>
+					</div>
+					<div class="hpadvantages____container__item hpadvantages____container__item--insights">
+						<h3>Unlock insights for everyone</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum sapien magna, sit amet congue ante imperdiet non.</p>
+					</div>
+						
+					<!-- <div class="separator"></div> -->
 
-				<div class="hpadvantages__item hpadvantages__item--scale">
-					<h3>A foundation build for scale &amp; foresight</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum sapien magna, sit amet congue ante imperdiet non. Nulla rhoncus lacinia est, ac luctus odio ornare quis.</p>
+					<div class="hpadvantages____container__item hpadvantages____container__item--scale">
+						<h3>A foundation build for scale &amp; foresight</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum sapien magna, sit amet congue ante imperdiet non. Nulla rhoncus lacinia est, ac luctus odio ornare quis.</p>
+					</div>
 				</div>
 			</section>
 			<section class="hpproducts">
+
+				
+
 				<!-- <div class="hpproducts__intro">
 					<small>What is product analytics ?</small>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum sapien magna, sit amet congue ante imperdiet non. Nulla rhoncus lacinia est, ac luctus odio ornare quis.</p>
@@ -97,7 +106,7 @@
 				</div> -->
 			</section>
 			<section class="hpcustomers">
-				<ul class="hpcustomers__list">
+				<!-- <ul class="hpcustomers__list">
 					<li class="hpcustomers__list__item">
 						<img src="img/newyork-logo.png" alt="New York logo">
 					</li>
@@ -113,21 +122,17 @@
 					<li class="hpcustomers__list__item">
 						<img src="img/logo-intuit-preferred.svg" alt="Intuit logo">
 					</li>
-				</ul> 
+				</ul>  -->
 			</section>
 			<section class="hpcoporate">
-
-				<div class="hpcoporate__news tabpanels">
-					<!-- Nav tabs -->
+				<div class="hpcoporate__container">
+					<div class="hpcoporate__news tabpanels">
 					<ul class="tabpanels__nav">
-						<li><a href="#events">Events</a></li>
-						<li><a href="#ebooksAndReports">eBooks &amp; Reports</a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="#news">Is the news</a></li>
+						<li class="tabpanels__nav__btn tabpanels__nav__btn--selected"><a href="#events">Events</a></li>
+						<li class="tabpanels__nav__btn"><a href="#ebooksAndReports">eBooks &amp; Reports</a></li>
+						<li class="tabpanels__nav__btn"><a href="#blog">Blog</a></li>
+						<li class="tabpanels__nav__btn"><a href="#news">Is the news</a></li>
 					</ul>
-
-					<!-- Tab panels -->
-
 					<div id="events" class="tabpanels__panel">
 					  	<div class="events__carouselbox__buttons">
 					    	<button class="prev">
@@ -185,130 +190,143 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="hpcoporate__contact">
-					<p>Let's talk about how Mixpanel help you better understand your users.</p>
-					<input type="button" value="contact us" class="btn btn--contact">
+					</div>
+					<div class="hpcoporate__contact">
+						<p><span>Let's talk</span> about how Mixpanel help you better understand your users.</p>
+						<!-- <input type="button" value="contact us" class="btn btn--contact"> -->
+						<div class="hpcoporate__contact__btn">
+							<a href="#" class="btn--contact btn">Contact us</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
 
 		<footer class="footer" role="contentinfo">
-			<div class="footernav">
-				<div>
-					<div class="footernav__title">Products</div>
-					<ul class="footernav__list">
-						<li class="footernav__list__item">
-							<a href="">Products</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Products</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Products</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Products</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Products</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Products</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Products</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Products</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Products</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Products</a>
-						</li>
+			<div class="footercontainer">
+				<div class="footernav">
+					<div class="footernav__group footernav__group--products-list">
+						<div class="footernav____group__title">Products</div>
+						<ul class="footernav__group__list">
+							<li class="footernav__group--products-list-item">
+								<ul>
+									<li class="footernav__group__list__item">
+										<a href="">Engagement</a>
+									</li>
+									<li class="footernav__group__list__item">
+										<a href="">Funnel</a>
+									</li>
+									<li class="footernav__group__list__item">
+										<a href="">Retention</a>
+									</li>
+									<li class="footernav__group__list__item">
+										<a href="">JQL</a>
+									</li>
+									<li class="footernav__group__list__item">
+										<a href="">Autotrack</a>
+									</li>
+								</ul>
+							</li>
+							<li class="footernav__group--products-list-item">
+								<ul>
+									<li class="footernav__group__list__item">
+										<a href="">PeopleAnalytics</a>
+									</li>
+									<li class="footernav__group__list__item">
+										<a href="">Mobile A/B Testing</a>
+									</li>
+									<li class="footernav__group__list__item">
+										<a href="">Notifications</a>
+									</li>
+									<li class="footernav__group__list__item">
+										<a href="">Automated Insights</a>
+									</li>
+									<li class="footernav__group__list__item">
+										<a href="">Codeless Mobile</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="footernav__group">
+						<div class="footernav____group__title">Solutions</div>
+						<ul class="footernav__group__list">
+							<li class="footernav__group__list__item">
+								<a href="">Consumer</a>
+							</li>
+							<li class="footernav__group__list__item">
+								<a href="">Financial Services</a>
+							</li>
+							<li class="footernav__group__list__item">
+								<a href="">Media &amp; Entertainment</a>
+							</li>
+							<li class="footernav__group__list__item">
+								<a href="">SaaS</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="footernav__group">
+						<div class="footernav____group__title">Ressources</div>
+						<ul class="footernav__group__list">
+							<li class="footernav__group__list__item">
+								<a href="">Support</a>
+							</li>
+							<li class="footernav__group__list__item">
+								<a href="">Blog</a>
+							</li>
+							<li class="footernav__group__list__item">
+								<a href="">Live webinars</a>
+							</li>
+							<li class="footernav__group__list__item">
+								<a href="">API &amp; Developers</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footernav__group">
+						<div class="footernav____group__title">Compagny</div>
+						<ul class="footernav__group__list">
+							<li class="footernav__group__list__item">
+								<a href="">About us</a>
+							</li>
+							<li class="footernav__group__list__item">
+								<a href="">Careers</a>
+							</li>
+							<li class="footernav__group__list__item">
+								<a href="">Contact us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footernav__group">
+						<div class="footernav____group__title">Follow</div>
+						<ul class="footernav__group__list">
+							<li class="footernav__group__list__item footernav__group__list__item--app ">
+								<img src="img/twitter.png" alt="twitter">
+							</li>
+							<li class="footernav__group__list__item footernav__group__list__item--app ">
+								<img src="img/facebook.png" alt="facebook">
+							</li>
+							<li class="footernav__group__list__item footernav__group__list__item--app ">
+								<img src="img/linkedin.png" alt="linkedin">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footerapp">
+					<!-- <input type="button" value="appStore">
+					<input type="button" value="googlePlay"> -->
+					<div class="footerapp__mobile-store btn btn--app">appStore</div>
+					<div class="footerapp__mobile-store btn btn--app">googlePlay</div>
+				</div>
+				<div class="footerlegal">
+					<ul>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">support@mixpanel.com</a></li>
+						<li><a href="#">(888) 510-2370</a></li>
 					</ul>
 				</div>
-				
-				<div>
-					<div class="footernav__title">Solutions</div>
-					<ul class="footernav__list">
-						<li class="footernav__list__item">
-							<a href="">Solutions</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Solutions</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Solutions</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Solutions</a>
-						</li>
-					</ul>
-				</div>
-				
-				<div>
-					<div class="footernav__title">Ressources</div>
-					<ul class="footernav__list">
-						<li class="footernav__list__item">
-							<a href="">Ressources</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Ressources</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Ressources</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Ressources</a>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<div class="footernav__title">Compagny</div>
-					<ul class="footernav__list">
-						<li class="footernav__list__item">
-							<a href="">Compagny</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Compagny</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Compagny</a>
-						</li>
-						<li class="footernav__list__item">
-							<a href="">Compagny</a>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<div class="footernav__title">Follow</div>
-					<ul class="footernav__list">
-						<li class="footernav__list__item">
-							<img src="" alt="twitter">
-						</li>
-						<li class="footernav__list__item">
-							<img src="" alt="facebook">
-						</li>
-						<li class="footernav__list__item">
-							<img src="" alt="linkedin">
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="footerapp">
-				<input type="button" value="appStore">
-				<input type="button" value="googlePlay">
-			</div>
-			<div class="footerlegal">
-				<ul>
-					<li><a href="#">Terms</a></li>
-					<li><a href="#">Privacy</a></li>
-					<li><a href="#">support@mixpanel.com</a></li>
-					<li><a href="#">(888) 510-2370</a></li>
-				</ul>
 			</div>
 		</footer>
 	</body>

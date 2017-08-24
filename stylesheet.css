@@ -2,20 +2,26 @@
 ul{
 	list-style:none;
 	margin:0;
+	padding-left:0;
 }
 a{
 	text-decoration:none;
 }
+p{
+	margin:0;
+}
 body{
+	font-family:arial;
+}
+/*body{
 	overflow-x:hidden;
 	margin:0 auto;
 	background-color:#fcfdfd;
 	width:100%;
-}
+}*/
+body>*,
+section {  outline:2px solid red;}
 
-*{
-	color:black !important;
-}
 /* Reset CSS */
 
 
@@ -42,6 +48,11 @@ body{
 	.btn--contact{
 		background-color:#00b4ff;
 	}
+	.btn--app{
+		background-color:black;
+		color:white;
+		display:inline;
+	}
 /* STATES */
 
 
@@ -51,32 +62,31 @@ header{
     top: 0;
     left:0;
     right:0;
-    max-width: 1200px;
+    max-width: 1180px;
     margin:0 auto;
-	background-color:blue;
+	background-color:transparent;
+	z-index:2;
+    padding: 20px 10px;
 }
 	.headerlogo{
-		float:left;
-		padding-left:10px;
+		/*float:left;*/
 	}
 		.headerlogo h2{
 			margin:0;
-			border:3px solid pink;
+			/*border:3px solid pink;*/
 		}
 	.headernav{
-		float:right;
-		padding-right:10px;
-		padding-top:20px;
+		/*float:right;*/
+		/*padding-top:20px;*/
 	}
 		.headernav__burgermenu{
 			display:none;
 		}
 			.headernav__menu__item{
 				float:left;
-				/*padding:10px;*/
-				margin-right:10px;
+				margin-left:40px;
 				text-transform:uppercase;
-				font-family:arial;
+				
 			}
 			.headernav__menu__item--signup{
 				position:relative;
@@ -95,12 +105,18 @@ header{
 				background-size: 10px;
 			}
 			.headernav__menu__item.headernav__menu__item--submenu{
-				width: 80px;
 				position: relative;
-				background-image:url('img/arrowdown.png');
+				/*background-image:url('img/arrowdown.png');
 				background-repeat:no-repeat;
-				background-position: 80px 15px;
+				background-position: 80px 15px;*/
 			}
+				.headernav__menu__item.headernav__menu__item--submenu::after{
+					content:"";
+					position: absolute;
+					background-image:url('img/arrowdown.png');
+					background-repeat:no-repeat;
+					background-position: 80px 15px;
+				}
 				.headernav__menu__item > a{
 					font-weight:bold;
 					position:relative;
@@ -159,10 +175,10 @@ header{
 								background-position:0px 13px;
 							}
 .hero{
-	height:1200px;
-	font-family:arial;
-	background-color:red;
-	padding-top:120px;
+	background-image: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
+	padding:150px 0;
+	position: relative;
+    z-index: 1;
 }
 	.hero__title{
 		color:white;
@@ -208,25 +224,24 @@ header{
 	}
 
 .hpadvantages{
-	background-color:#fff;
-	/*padding:20px;*/
-	border-radius:5px;
+	background-color:#f0f4f7;
 	text-align:center;
-	height: auto;
 	box-shadow: 0px 2px 2px #eef1f2;
-    overflow-x: hidden;
-    font-family:arial;
+   	
     font-size:14px;
-    border:3px solid yellow;
-    max-width:1200px;
-    margin:0 auto;
-    position: absolute;
-    top: 1230px;
-    left: 0;
-    right: 0;
-    z-index: 1;
+    position:relative;
 }
-	.hpadvantages__item{
+
+	.hpadvantages__container{
+		max-width: 1200px;
+	    background-color:#fff;
+	    margin: 0 auto;
+	    position:relative;
+	    margin-top:-150px;
+	    z-index:2;
+	    border-radius:5px;
+	}
+	.hpadvantages____container__item{
 		width:270px;
 		display:inline-block;
 		margin:0 30px;
@@ -235,13 +250,13 @@ header{
 		line-height:25px;
 
 	}
-		.hpadvantages__item h3{
+		.hpadvantages____container__item h3{
 			margin-top:100px;
 		}
-		.hpadvantages__item p{
+		.hpadvantages____container__item p{
 			color:grey;
 		}
-			.hpadvantages__item h3::before{
+			.hpadvantages____container__item h3::before{
 				content:" ";
 				background-repeat: no-repeat;
 				height:20px;
@@ -251,13 +266,13 @@ header{
 				top:30px;
 				left:0;
 			}
-			.hpadvantages__item--journey h3::before{
+			.hpadvantages____container__item--journey h3::before{
 				background-image:url("img/compass.svg");
 			}
-			.hpadvantages__item--answers h3::before{
+			.hpadvantages____container__item--answers h3::before{
 				background-image:url('img/chat.svg');
 			}
-			.hpadvantages__item--insights h3::before{
+			.hpadvantages____container__item--insights h3::before{
 				background-image:url('img/check.svg');
 			}
 		.separator{
@@ -267,16 +282,17 @@ header{
 		    background-color: #ecf1f4;
 		    margin-left: 40px;
 		}
-	.hpadvantages__item--scale{
-		display:block;
+	.hpadvantages____container__item--scale{
+		display:inline-block;
 		width:100%;
+		padding:30px 0;
 	}
-		.hpadvantages__item--scale h3{
+		.hpadvantages____container__item--scale h3{
 			float:left;
 			margin-top:20px;
 			padding-left: 35px;
 		}
-		.hpadvantages__item--scale p{
+		.hpadvantages____container__item--scale p{
 			width: 400px;
 		    float: right;
 		    margin-right: 80px;
@@ -289,10 +305,10 @@ header{
 	/*background-image:url("img/laptopIllustration.png");*/
 	background-repeat:no-repeat;
 	background-position: -100px 85px;
-	font-family:arial;
+	
 	position:relative;
 	background-size: 740px;
-	background-color:green;
+	background-color:#f0f4f7;
 }
 	.hpproducts__intro{
 	   	width: 500px;
@@ -350,13 +366,13 @@ header{
 	width:100%;
 	position:relative;
 	background-color:grey;
+	background-image: url('img/home-customer-background.svg');
 }
 	.hpcustomers__wallpaper{
 		height:120px;
 		position: absolute;
 	    left: -150px;
 	    width: 1400px;
-		background-image: url('img/home-customer-background.svg');
 		background-repeat: no-repeat;
 	}
 	.hpcustomers__list{
@@ -381,6 +397,108 @@ header{
 			    margin-left: auto; 
 			    margin-right: auto; 
 			    width: 100px;
-			}					
+			}
+.hpcoporate{
+	background-color:white;
+}
+	.hpcoporate__container{
+		background: transparent;
+		max-width:1200px;
+		margin:0 auto;
+	}
+
+		/*** Tabpanels ***/
+		.tabpanels{
+			display:flex;
+		}
+			.tabpanels__nav{
+				background: linear-gradient(to bottom,#f0f4f7,#fff) no-repeat;
+				padding:100px 100px 0 40px;
+			}
+				.tabpanels__nav li{
+					margin:20px 0;
+				}
+					.tabpanels__nav__btn a{
+						padding:10px;
+						color:black;
+						display:block;
+						width:100%;
+						border-radius:5px;
+						font-weight:bold;
+					}
+						.tabpanels__nav__btn--selected{
+							background-color:#fff;
+						}
+			.tabpanels__panel{
+				flex-grow:1;
+				background-color:#fff;
+				padding-left: 30px;
+			}
+			#ebooks,
+			#blog,
+			#news{
+				display:none;
+			}
+		/*** Contact ***/
+		.hpcoporate__contact{
+			background-color:#fff;
+			padding: 40px 0;
+			/*display:flex;*/
+		}
+			.hpcoporate__contact p{
+				border-top: 2px solid #f1f7fb;
+    			padding: 30px 0;
+				color:#6b7c93;
+			}
+				.hpcoporate__contact span{
+					font-weight:bold;
+				}
+			.hpcoporate__contact__btn{
+				margin-top:-50px;
+				text-align:right;
+			}
+.footer{
+	clear:both;
+	background-color:#f0f4f7;
+}
+	.footercontainer{
+		margin:0 auto;
+		max-width:1200px;
+		padding-bottom:40px;
+	}
+		.footernav{
+			display:flex;
+			padding-bottom: 40px;
+		}
+			.footernav__group{
+				flex-grow:1;
+			}	
+				.footernav____group__title{
+					padding:50px 0 20px 0;
+				}
+				.footernav__group__list{
+					padding-left:0;
+				}
+					.footernav__group__list__item{
+						padding:10px 15px 10px 0;
+					}
+					.footernav__group--products-list-item{
+						display:inline-block;
+					}
+						.footernav__group__list__item--app{
+							display:inline-block;
+						}
+		.footerapp{
+			padding-top: 40px;
+    		border-top: 1px solid #d2dde6;
+		}
+		.footerlegal{
+			text-align: right;
+    		margin-top: -24px;
+		}
+			.footerlegal li{
+				display:inline-block;
+				padding:0 5px;
+			}
 
 	
