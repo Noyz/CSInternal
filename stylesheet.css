@@ -21,7 +21,7 @@ body{
 }*/
 body>*,
 section {  
-	outline:2px solid red;
+	/*outline:2px solid red;*/
 }
 
 section{
@@ -72,7 +72,7 @@ header{
     margin:0 auto;
 	background-color:transparent;
 	z-index:2;
-    padding: 20px 10px;
+    padding: 20px 50px;
     /*display:flex;*/
 }
 	.headerlogo{
@@ -83,8 +83,9 @@ header{
 			/*border:3px solid pink;*/
 		}
 	.headernav{
-		flex-grow:1;
 		text-align:right;
+		float:right;
+		margin-top:-40px;
 	}
 		.headernav__burgermenu{
 			display:none;
@@ -99,7 +100,10 @@ header{
 			.headernav__menu__item{
 				display:inline-block;
 				text-transform:uppercase;
-				
+				padding-left:30px;
+			}
+			.headernav__menu__item--submenu{
+				position:relative;
 			}
 			.headernav__menu__item--signup{
 				position:relative;
@@ -113,7 +117,8 @@ header{
 				height: 15px;
 				position: absolute;
 			    top: 3px;
-    			left: 70px;
+    			/*left: 70px;*/
+    			right:5px;
 				background-repeat: no-repeat;
 				background-size: 10px;
 			}
@@ -137,18 +142,20 @@ header{
 					font-weight:bold;
 					position:relative;
 					color:white;
+					/*padding-left:30px;*/
 				}
 				.headernav__menu__item__submenu{
 					display:none;
 					width: 240px;
 					position:absolute;
-					top:80px;
-					/*left:-70px;*/
+				    top: 30px;
+    				left: -26px;
 					background-color:#f6f9fc;
 					padding: 10px 15px;
 					border-radius:5px;
 					text-transform:initial;
 					font-weight:bold;
+					text-align:left;
 				}
 				.headernav__menu__item__submenu::before{
 					content:"";
@@ -173,7 +180,8 @@ header{
 							border-bottom:none;
 						}
 							.headernav__menu__item__submenu li a{
-								color:#6d495a;padding-left:50px;
+								color:#6d495a;
+								padding-left:50px;
 							}
 							.headernav__menu__item__submenu .submenu--about{
 								background:url('img/about-us-hover.png')no-repeat;
@@ -191,8 +199,7 @@ header{
 								background-position:0px 13px;
 							}
 .hero{
-	height:900px; /*To change if possible*/
-	padding:150px 50px;
+	padding: 150px 50px 900px 50px;
 	position: relative;
     z-index: 1;
     background:url("img/hero-image.png") no-repeat center 400px, radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
@@ -200,17 +207,24 @@ header{
 	.hero__title{
 		color:white;
 		text-align:center;
+		max-width: 1200px;
+		margin:0 auto;
+		padding-bottom:30px;
 	}
 	.hero__subtitle{
 		color:white;
 		text-align:center;
 		font-size:16px;
-		margin-bottom:30px;
+		padding-bottom:30px;
+		max-width: 1200px;
+		margin:0 auto;
 	}
 	.hero__form{
 		/*width:400px;*/
 		margin:0 auto;
 		text-align:center;
+		max-width: 1200px;
+		margin:0 auto;
 	}
 		.hero .signupform__field{
 			color:white;
@@ -220,7 +234,8 @@ header{
 			background-color:#3a6fb2;
 			margin-right: 10px;
 			height: 40px;
-		    padding: 5px 10px;
+		    padding: 5px 0px;
+		    text-indent:10px;
 		    width: 260px;
 		} 
 			::-webkit-input-placeholder {
@@ -256,14 +271,15 @@ header{
 	    z-index:2;
 	    border-radius:5px;
 	    box-shadow: 0px 2px 2px #eef1f2;
+	    padding:20px;
 	}
 	.hpadvantages____container__item{
-		width:270px;
+		width:25%;
 		display:inline-block;
-		margin:0 30px;
 		text-align:justify;
 		position:relative;
 		line-height:25px;
+		padding:20px;
 
 	}
 		.hpadvantages____container__item h3{
@@ -275,12 +291,12 @@ header{
 			.hpadvantages____container__item h3::before{
 				content:" ";
 				background-repeat: no-repeat;
-				height:20px;
-				width:20px;
+				height:30px;
+				width:30px;
 				display:block;
 				position:absolute;
 				top:30px;
-				left:0;
+				left:15px;
 			}
 			.hpadvantages____container__item--journey h3::before{
 				background-image:url("img/compass.svg");
@@ -299,55 +315,59 @@ header{
 		    margin-left: 40px;
 		}
 	.hpadvantages____container__item--scale{
-		display:inline-block;
-		/*width:100%;*/
+		display:table;
+		width:100%;
 		padding:30px 0;
 	}
 		.hpadvantages____container__item--scale h3{
-			/*float:left;*/
-			margin-top:20px;
-			padding-left: 35px;
+			width:40%;
+			display:table-cell;
+			padding-left:100px;
 		}
 		.hpadvantages____container__item--scale p{
-			width: 400px;
-		    /*float: right;*/
-		    margin-right: 80px;
+		    width:40%;
+		    display:table-cell;
+		    padding-right:100px;
 
 
 		}
 
 .hpproducts{
-	background-position: -100px 85px;
+	background-position: -20px 160px;
 	position:relative;
 	background-color:#f0f4f7;
 	padding-top:150px;
+	background-image:url("img/laptopIllustration.png");
+	background-repeat:no-repeat;
 }
 	.hpproductscontainer{
 		max-width:1200px;
 		margin:0 auto;
-		background-image:url("img/laptopIllustration.png");
-		background-repeat:no-repeat;
+	    padding-left: 600px;
 	}
 	.hpproducts__intro{
-	   	width: 500px;
 	    border-bottom: 2px solid #edf4f9;
 	    margin-bottom:70px;
 	    padding-bottom:70px;
+	    max-width:600px;
 	}
 		.hpproducts__intro small{
 			color:#6b7c93;
 			font-weight:bold;
 			text-transform:uppercase;
+			padding-bottom: 15px;
+    		display: block
 		}
 		.hpproducts__intro p{
 			color:#47495a;
 			font-weight:bold;
 		}
 	.hpproducts__content{
-		/*top:210px;*/
+    	max-width:400px;
+    	padding-left:150px;
 	}
 		.hpproducts__content__item{
-			width:375px;
+			
 		}
 		.hpproducts__content__item h3{
 			/*text-align:right;*/
@@ -401,6 +421,8 @@ header{
 			background-color:white;
 			margin:0 10px;
 			display:inline-block;
+		    position: relative;
+    		overflow: hidden;
 		}
 			.hpcustomers__list__item img{
 				position: absolute; 
@@ -521,5 +543,90 @@ header{
 				display:inline-block;
 				padding:0 5px;
 			}
+
+@media only screen and (max-width: 1120px) {
+	/*body{
+		display:none;
+	}*/
+
+	/** Products **/
+	.hpproducts{
+		background-position:center 100px;
+		background-size:400px;
+		padding-top:450px;
+	}
+		.hpproductscontainer{
+			padding-left:0 !important;
+		}
+			.hpproducts__intro{
+				text-align:center;
+				margin:0 auto;
+			}
+			.hpproducts__content{
+				max-width:none;
+				padding-left: 0;
+				text-align:center;
+				border-top: 2px solid #6b7c93;
+			}
+				.hpproducts__content__item{
+					width:25%;
+					padding:20px;
+					display:inline-block;
+					text-align:left;
+				}
+
+
+}
+
+@media only screen and (max-width: 760px) {
+	.headernav__menu{
+		display:none;
+	}
+	.headernav__burgermenu{
+		display:block;
+	}
+
+	/**Hero **/
+	
+	.hero{
+		background:radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
+		padding-bottom:200px !important;
+	}
+		.hero__form input{
+			width:100% !important;
+			margin:10px 0;
+		}
+	/** Advantages **/
+	.hpadvantages____container__item {
+		width:100% !important;
+		padding: 0 0 50px 0 !important;
+	}
+		.hpadvantages____container__item h3{
+			margin-top:10px !important;
+			padding-left:80px !important;
+		}
+			.hpadvantages____container__item h3::before{
+				top:5px !important;
+			}
+		.hpadvantages____container__item p{
+			padding-left:80px !important;
+		}
+	.hpadvantages____container__item--scale{
+		width:100% !important;
+	}
+		.hpadvantages____container__item--scale h3,
+		.hpadvantages____container__item--scale p{
+			display:block !important;
+			width:auto;
+			padding-right:0;
+			text-align:center;
+
+		}
+	/** Products **/
+	.hpproducts__content__item{
+		width:100%;
+	}
+
+}			
 
 	
