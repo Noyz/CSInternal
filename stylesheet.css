@@ -1,5 +1,5 @@
 /* Reset CSS */
-ul{
+ul, ol{
 	list-style:none;
 	margin:0;
 	padding-left:0;
@@ -333,17 +333,19 @@ header{
 		}
 
 .hpproducts{
-	background-position: -20px 160px;
 	position:relative;
-	background-color:#f0f4f7;
+	/*background-color:#f0f4f7;*/
 	padding-top:150px;
-	background-image:url("img/laptopIllustration.png");
-	background-repeat:no-repeat;
+	background: url("img/laptopIllustration.png") center 0 no-repeat;
+	background-color:#f0f4f7;
+
+
 }
 	.hpproductscontainer{
 		max-width:1200px;
 		margin:0 auto;
 	    padding-left: 600px;
+	    box-sizing:border-box;
 	}
 	.hpproducts__intro{
 	    border-bottom: 2px solid #edf4f9;
@@ -410,7 +412,6 @@ header{
 		background-repeat: no-repeat;
 	}
 	.hpcustomers__list{
-	    width: 800px;
     	margin: 0 auto;
     	text-align:center;
 	}
@@ -432,29 +433,47 @@ header{
 			    margin-right: auto; 
 			    width: 100px;
 			}
+			.logo-ny{
+				top:37px;
+			}
+			.logo-microsoft{
+				top:34px;
+			}
+			.logo-docusign{
+				top:34px;
+			}
+			.logo-intuit{
+				top:24px;
+			}
+
 .hpcoporate{
 	background-color:white;
 	background: linear-gradient(to bottom,#f0f4f7,#fff) no-repeat;
-	padding:0px 0 20px 50px;
+	/*padding:0px 0 20px 50px;*/
+	padding:0;
 }
 
 		/*** Tabpanels ***/
 		.tabpanels__container__nav{
 			width:30%;
-			padding:50px 0 0 50px;
+			padding:100px 0 200px 0px;
 			margin-right:30px;
+			margin-left:15%;
 		}
 		.tabpanels__container__panels{
-			width:70%;
+			width:60%;
 		}
 			.tabpanels{
 				display:flex;
+				box-sizing:border-box;
 			}
 				.tabpanels__nav{
-					/*padding:100px 100px 0 40px;*/
+
 				}
 					.tabpanels__nav li{
-						margin:20px 0;
+						max-width: 300px;
+						margin-bottom: 20px;
+
 					}
 						.tabpanels__nav__btn a{
 							padding:10px;
@@ -462,15 +481,45 @@ header{
 							display:block;
 							border-radius:5px;
 							font-weight:bold;
+							position:relative;
+							/*text-indent:60px;*/
+							padding-left:80px;
+						}
+						.tabpanels__nav__btn a::before{
+							content:"";
+							background-repeat:no-repeat;
+							display: block;
+							height:40px;
+							width:40px;
+							position:absolute;
+							top:-2px;
+							left:5px;
 						}
 							.tabpanels__nav__btn--selected{
 								background-color:#fff;
 								box-shadow: 0px 2px 2px #eef1f2;
 							}
+							.tabpanels__nav__btn--events::before{
+								background:url("img/events.png");
+							}
+							.tabpanels__nav__btn--ebooks::before{
+								background:url("img/ebooks.png");
+							}
+							.tabpanels__nav__btn--blog::before{
+								background:url("img/blog.png");
+							}
+							.tabpanels__nav__btn--news::before{
+								content:"";
+								background:url("img/news.png");
+								background-repeat:no-repeat;
+								display: block;
+								height:20px;
+								width:20px;
+							}
 				.tabpanels__panel{
 					flex-grow:1;
 					background-color:#fff;
-					padding:50px 0 0 30px;
+					padding:100px 0 0 30px;
 					height:100%;
 				}
 				#ebooks,
@@ -478,6 +527,63 @@ header{
 				#news{
 					display:none;
 				}
+				.events__carouselbox__content__item{
+					box-shadow: 0px 3px 5px #aeb1b2;
+					padding-bottom:30px;
+					width:80%;
+					color:#8d9aac;
+					border-radius:5px;
+				}
+				.events__carouselbox__content__item.item2,
+				.events__carouselbox__content__item.item3,
+				.events__carouselbox__content__item.item4{
+					display:none;
+				}
+					.events__carouselbox__content__item img{
+						width:100%;
+						display:block;
+						border-top-right-radius: 5px;
+						border-top-left-radius: 5px;
+					}
+					.events__carouselbox__content__item div{
+						display:inline-block;
+						padding: 25px 10px 10px 65px;
+						
+					}
+
+					.events__carouselbox__content__item div.events-durations{
+						background:url('img/calendar.png') no-repeat 35px 22px;
+					}
+					.events__carouselbox__content__item div.events-places{
+						background:url('img/location.png') no-repeat 35px 22px;
+					}
+					.events__carouselbox__content__item p{
+						padding-left:35px;
+					}
+						.events__carouselbox__content__item p span{
+							font-weight:bold;
+							display:block;
+							padding-bottom:15px;
+							color:black;
+						}
+					.events__carouselbox__buttons{
+						margin:0 auto;
+						width:50%;
+						text-indent: 65px;
+						padding-top: 50px;
+					}
+						.events__carouselbox__buttons div{
+							background-color:#00b4ff;
+							width:5px;
+							height:5px;
+							margin:5px;
+							display:inline-block;
+							text-align:center;
+							border-radius:50%;
+						}
+							.events__carouselbox__buttons div.prev{
+								background-color:#e2ebf1;
+							}
 		/*** Contact ***/
 		.hpcoporate__contact{
 			background-color:#fff;
@@ -551,9 +657,9 @@ header{
 
 	/** Products **/
 	.hpproducts{
-		background-position:center 100px;
-		background-size:400px;
+		background-size:800px;
 		padding-top:450px;
+		background: grey,  url(img/laptopIllustration.png) center 50px no-repeat;
 	}
 		.hpproductscontainer{
 			padding-left:0 !important;
@@ -622,10 +728,14 @@ header{
 			text-align:center;
 
 		}
+
 	/** Products **/
-	.hpproducts__content__item{
-		width:100%;
+	.hpproducts{
+		background-size:400px;
 	}
+		.hpproducts__content__item{
+			width:100%;
+		}
 
 }			
 
