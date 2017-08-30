@@ -44,7 +44,7 @@ section{
 	}
 	.btn--signup{
 		background-color:#00b4ff;
-		padding-left: 15px;
+		padding: 10px 30px !important;
 	}
 	.btn--submit{
 		background-color:#f88379;
@@ -81,11 +81,12 @@ header{
 		.headerlogo h2{
 			margin:0;
 			/*border:3px solid pink;*/
+			display:inline;
 		}
 	.headernav{
 		text-align:right;
 		float:right;
-		margin-top:-40px;
+		margin-top:-10px;
 	}
 		.headernav__burgermenu{
 			display:none;
@@ -104,10 +105,12 @@ header{
 			}
 			.headernav__menu__item--submenu{
 				position:relative;
+				padding: 20px;
 			}
 			.headernav__menu__item--signup{
 				position:relative;
 				margin-right:0;
+
 			}
 			.headernav__menu__item--signup::after{
 				content:"";
@@ -135,21 +138,21 @@ header{
 					position: absolute;
 					background-image:url('img/arrowdown.png');
 					background-repeat:no-repeat;
-					top:5px;
-					right:-25px;
+				    top: 14px;
+   					right: -13px;
 				}
 				.headernav__menu__item > a{
 					font-weight:bold;
 					position:relative;
 					color:white;
-					/*padding-left:30px;*/
+					padding:10px;
 				}
 				.headernav__menu__item__submenu{
 					display:none;
 					width: 240px;
 					position:absolute;
-				    top: 30px;
-    				left: -26px;
+				    top: 45px;
+    				left: -39px;
 					background-color:#f6f9fc;
 					padding: 10px 15px;
 					border-radius:5px;
@@ -657,9 +660,11 @@ header{
 
 	/** Products **/
 	.hpproducts{
-		background-size:800px;
-		padding-top:450px;
-		background: grey,  url(img/laptopIllustration.png) center 50px no-repeat;
+		background-size:800px !important;
+		padding-top:700px;
+		background:none;
+		background:url(img/laptopIllustrationRogner.png) center 50px no-repeat ;
+		background-color: #f0f4f7;
 	}
 		.hpproductscontainer{
 			padding-left:0 !important;
@@ -731,7 +736,9 @@ header{
 
 	/** Products **/
 	.hpproducts{
-		background-size:400px;
+		background:none;
+		padding-top:30px;
+		background-color: #f0f4f7;
 	}
 		.hpproducts__content__item{
 			width:100%;
