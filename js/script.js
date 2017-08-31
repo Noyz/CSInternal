@@ -4,6 +4,12 @@ $(document).ready(function(){
 			$(this).toggleClass('open');
 		});
 
+		if($(document).width() < 771){
+			$('.headernav__menu__item--submenu a').on('click', function(){
+				$('.headernav__menu__item--submenu').toggleClass('submenu-visible');
+			});
+		}
+
 
 	/** Corporate nav**/
 	$('.tabpanels__nav__btn a').on('click', function(e){

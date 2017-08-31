@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Product analytics for product people</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" type="text/css">
 		<link rel="stylesheet" href="stylesheet.css" type="text/css"></link>
 
@@ -56,9 +57,6 @@
 					<input type="email" placeholder="Enter your email..." class="signupform__field ">
 					<input type="submit" value="get started" class="signupform__submit btn btn--submit">
 				</form>
-				<!-- <figure class="hero__bottompicture" style="opacity:0">
-					<img src="img/hero-image.png" width="100%" alt="devices-showing-statistiques">
-				</figure> -->
 			</section>
 			<section class="hpadvantages">
 				<div class="hpadvantages__container">
@@ -89,15 +87,15 @@
 					<div class="hpproducts__content">
 						<div class="hpproducts__content__item hpproducts__content__item--understand">
 							<h3 class="hpproducts__content__item__title">Better understand your customers</h3>
-							<p>"Who are my best customers and what features do they love?"<br>Find out with Engagement. People, and JQL.</p>
+							<p>"Who are my best customers and what features do they love?"<br>Find out with <span class="hpproducts__content__item__keywords">Engagement</span>, <span class="hpproducts__content__item__keywords">People</span>, and<span class="hpproducts__content__item__keywords"> JQL</span>.</p>
 						</div>
 						<div  class="hpproducts__content__item hpproducts__content__item--acquisition">
 							<h3 class="hpproducts__content__item__title">Improve acquisition and activation flows</h3>
-							<p>"How do i get more customers and engage more deeply with the one I have?"<br>Find out with A/B Testing and Notifications.</p>
+							<p>"How do i get more customers and engage more deeply with the one I have?"<br>Find out with <span class="hpproducts__content__item__keywords">A/B Testing</span> and <span class="hpproducts__content__item__keywords">Notifications</span>.</p>
 						</div>
 						<div class="hpproducts__content__item hpproducts__content__item--revenu">
 							<h3 class="hpproducts__content__item__title">Drive up customer retention and revenue</h3>
-							<p>"How can I keep customers around longer and earn more from them?"<br>Find out with Funnels and Retention.</p>
+							<p>"How can I keep customers around longer and earn more from them?"<br>Find out with <span class="hpproducts__content__item__keywords">Funnels</span> and <span class="hpproducts__content__item__keywords">Retention</span>.</p>
 						</div>
 					</div>
 					<div style="clear:both"></div>
@@ -122,8 +120,8 @@
 					</li>
 				</ul> 
 			</section>
-			<section class="hpcoporate">
-				<div class="hpcoporate__news tabpanels">
+			<section class="hpcorporate">
+				<div class="hpcorporate__news tabpanels">
 					<div class="tabpanels__container__nav">
 						<ul class="tabpanels__nav">
 							<li class="tabpanels__nav__btn">
@@ -141,12 +139,14 @@
 						</ul>
 					</div>
 					<div class="tabpanels__container__nav--mobile">
-						<select class="tabpanels__nav__select">
-							<option value="Events" spareValue="events">Events</option>
-							<option value="eBooks &amp; Reports" spareValue="ebooks">eBooks &amp; Reports</option>
-							<option value="Blog" spareValue="blog">Blog</option>
-							<option value="Is the news" spareValue="news">Is the news</option>
-						</select>
+						<div class="tabpanels__nav__select__wrapper">
+							<select class="tabpanels__nav__select">
+								<option value="Events" spareValue="events">Events</option>
+								<option value="eBooks &amp; Reports" spareValue="ebooks">eBooks &amp; Reports</option>
+								<option value="Blog" spareValue="blog">Blog</option>
+								<option value="Is the news" spareValue="news">Is the news</option>
+							</select>
+						</div>
 					</div>
 					<div class="tabpanels__container__panels">
 						<div id="events" class="tabpanels__panel">
@@ -193,10 +193,10 @@
 						</div>
 						</div>
 					</div>
-				<div class="hpcoporate__contact">
+				<div class="hpcorporate__contact">
 					<p><span>Let's talk</span> about how Mixpanel help you better understand your users.</p>
 					<!-- <input type="button" value="contact us" class="btn btn--contact"> -->
-					<div class="hpcoporate__contact__btn">
+					<div class="hpcorporate__contact__btn">
 						<a href="#" class="btn--contact btn">Contact us</a>
 					</div>
 				</div>
@@ -294,8 +294,8 @@
 						</ul>
 					</div>
 					<div class="footernav__group">
-						<div class="footernav__group__title">Follow</div>
-						<ul class="footernav__group__list">
+						<div class="footernav__group__title ">Follow</div>
+						<ul class="footernav__group__list footernav__group__title__socialMedia">
 							<li class="footernav__group__list__item footernav__group__list__item--app ">
 								<img src="img/twitter.png" alt="twitter">
 							</li>

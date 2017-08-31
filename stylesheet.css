@@ -220,6 +220,8 @@ header{
 		max-width: 1200px;
 		margin:0 auto;
 		padding-bottom:30px;
+		text-transform: uppercase;
+		font-size: 24px;
 	}
 	.hero__subtitle{
 		color:white;
@@ -228,6 +230,7 @@ header{
 		padding-bottom:30px;
 		max-width: 1200px;
 		margin:0 auto;
+		font-size: 20px;
 	}
 	.hero__form{
 		margin:0 auto;
@@ -239,7 +242,7 @@ header{
 			color:white;
 			border-radius: 5px;
 			border:none;
-			background-color:#3a6fb2;
+			background: rgba(255,255,255,.2);
 			margin-right: 10px;
 			height: 40px;
 		    padding: 5px 0px;
@@ -294,9 +297,11 @@ header{
 	}
 		.hpadvantages__container__item h3{
 			margin-top:100px;
+			font-size: 20px;
 		}
 		.hpadvantages__container__item p{
 			color:grey;
+			font-size: 18px;
 		}
 			.hpadvantages__container__item h3::before{
 				content:" ";
@@ -372,6 +377,7 @@ header{
 		.hpproducts__intro p{
 			color:#47495a;
 			line-height: 25px;
+			font-size:24px;
 
 		}
 	.hpproducts__content{
@@ -380,6 +386,7 @@ header{
 	}
 		.hpproducts__content__item{
 			padding-bottom: 40px;
+			font-size:18px;
 		}
 		.hpproducts__content__item h3{
 			/*text-align:right;*/
@@ -389,10 +396,12 @@ header{
 				content:"";
 				background-repeat: no-repeat;
 				display:block;
-				height:20px;
-				width:20px;
+				height:40px;
+				width:40px;
 				position:absolute;
-				left:-40px;
+				left: -45px;
+    			top: -13px;
+
 			}
 			.hpproducts__content__item--understand > h3::before{
 				background-image:url("img/eye.svg");
@@ -407,7 +416,10 @@ header{
 				background-image:url("img/revenue.svg");
 			}
 			.hpproducts__content__item p{
-				/*text-align:justify;*/
+				color:#6b7c93;
+			}
+			.hpproducts__content__item__keywords{
+				color:black;
 			}
 
 .hpcustomers{
@@ -426,8 +438,8 @@ header{
     	text-align:center;
 	}
 		.hpcustomers__list__item{
-			height:100px;
-			width:100px;
+			height:90px;
+			width:90px;
 			border-radius:50%;
 			background-color:white;
 			margin:0 10px;
@@ -441,7 +453,7 @@ header{
 			    right: 0; 
 			    margin-left: auto; 
 			    margin-right: auto; 
-			    width: 100px;
+			    width: 100%;
 			}
 			.logo-ny{
 				top:37px;
@@ -456,7 +468,7 @@ header{
 				top:24px;
 			}
 
-.hpcoporate{
+.hpcorporate{
 	background-color:white;
 	background: linear-gradient(to bottom,#f0f4f7,#fff) no-repeat;
 	/*padding:0px 0 20px 50px;*/
@@ -468,7 +480,7 @@ header{
 			width:30%;
 			padding:100px 0 200px 0px;
 			margin-right:30px;
-			margin-left:15%;
+			margin-left:10%;
 		}
 		.tabpanels__container__nav--mobile{
 			display: none;
@@ -619,20 +631,22 @@ header{
 							
 						}			
 		/*** Contact ***/
-		.hpcoporate__contact{
-			background-color:#fff;
+		.hpcorporate__contact{
+			/*background-color:#fff;*/
 			padding: 40px 50px;
 			position:relative;
+			max-width: 1200px;
+    		margin: 0 auto;
 		}
-			.hpcoporate__contact p{
+			.hpcorporate__contact p{
 				border-top: 2px solid #f1f7fb;
     			padding: 30px 0;
 				color:#6b7c93;
 			}
-				.hpcoporate__contact span{
+				.hpcorporate__contact span{
 					font-weight:bold;
 				}
-			.hpcoporate__contact__btn{
+			.hpcorporate__contact__btn{
 				margin-top:-50px;
 				text-align:right;
 			}
@@ -673,6 +687,15 @@ header{
 						.footernav__group__list__item--app{
 							display:inline-block;
 						}
+				.footernav__group__title__socialMedia{
+					white-space:nowrap;
+				}		
+					.footernav__group__title__socialMedia .footernav__group__list__item{
+						background-color:#fff;
+						padding: 8px 9px 3px 8px;
+						border-radius:50%;
+						white-space: nowrap;
+					}
 		.footerapp{
 			padding-top: 40px;
     		border-top: 1px solid #d2dde6;
@@ -695,7 +718,7 @@ header{
 	/** Products **/
 	.hpproducts{
 		padding-top: 510px;
-		background:url('img/laptopIllustrationMobile.png') center 80px no-repeat, linear-gradient(to bottom,#f0f4f7 0,#fff 49%,#fff 100%);
+		background:url('img/laptopIllustrationMobile.png') center 100px no-repeat, linear-gradient(to bottom,#f0f4f7 0,#fff 49%,#fff 100%);
 		background-color: #f0f4f7;
 	}
 		.hpproductscontainer{
@@ -720,6 +743,14 @@ header{
 				    float: left;
 					box-sizing: border-box;
 				}
+					.hpproducts__content__item h3{
+						padding-left:50px;
+						font-size:20px;
+					}
+					.hpproducts__content__item h3:before{
+						left:0;
+						top:0;
+					}
 	/** Footer **/
 	.footernav__group{
 		margin:0 10px;
@@ -727,7 +758,7 @@ header{
 
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 780px) {
 	.headernav{
 		/*position:relative;*/
 	}
@@ -772,15 +803,53 @@ header{
 			}
 			.headernav__menu__item--signup{
 				padding: 0 0 0 10px;
+			    margin-left: 50px;
+			    border-bottom:none !important;
 			}
 				.headernav__menu li a{
 				    color:black;
 				    padding-right: 20px;
 				    padding-left:50px;
 				}
-				.headernav__menu__item__submenu{
-					display:none !important;
+				.headernav__menu__item.headernav__menu__item--submenu:hover .headernav__menu__item__submenu{
+					display:none;
 				}
+				.submenu-visible .headernav__menu__item__submenu{
+					display:block !important;
+				}
+				.headernav__menu__item__submenu{
+					width:initial !important;
+					position:initial !important;
+					margin-top:10px;
+				}
+					.headernav__menu__item__submenu:before{
+						content:none;
+					}
+				.headernav__menu__item--submenu{
+					padding-right:0 !important;
+					/*padding-bottom:0 !important;*/
+				}
+					.headernav__menu__item--submenu > a:after{
+					content: "";
+				    width: 13px !important;
+				    height: 13px !important;
+				    position: absolute;
+				    background-image: url(img/menu-arrow-active.svg) !important;
+				    background-repeat: no-repeat;
+				    top: 13px !important;
+				    right: 0px !important;
+				}
+			.headernav__menu__item__submenu .submenu--about{
+				background-position: 0px 18px;
+			}
+			.headernav__menu__item__submenu .submenu--jobs{
+				background-position: 0px 15px;
+			}
+			.headernav__menu__item__submenu .submenu--blog{
+				background-position: 0px 20px;
+			}
+
+				
 
 	/**Hero **/
 	
@@ -809,6 +878,8 @@ header{
 				}
 					.hpadvantages__container__item h3::before{
 						top:5px !important;
+						height:35px;
+						width:35px;
 					}
 				.hpadvantages__container__item p{
 					padding-left:80px !important;
@@ -824,6 +895,7 @@ header{
 					text-align:center;
 					padding-left:0 !important;
 				}
+
 
 	/** Products **/
 	.hpproducts{
@@ -843,6 +915,30 @@ header{
 		.hpproducts__content__item{
 			width:100%;
 		}
+			.hpproducts__content__item h3{
+				padding-left:0px;
+				font-size:20px;
+			}
+				.hpproducts__content__item h3:before{
+				    left: -50px;
+    				top: -10px;
+				}
+	/** Customers **/
+	.hpcustomers__list__item{
+			height:70px;
+			width:70px;
+			margin:0 5px;
+	}
+		.logo-microsoft {
+		    top: 25px;
+		}
+		.logo-docusign{
+			top:25px;
+		}
+		.logo-intuit{
+			top:17px;
+		}
+
 	/** Corporate News**/
 	.tabpanels{
 		display:block;
@@ -853,32 +949,81 @@ header{
 		}
 	.tabpanels__container__nav--mobile{
 		display:block;
-	    padding: 20px;
+        padding: 40px 20px;
 		text-align: center;
+		width: 80%;
+    	margin: 0 auto;
+
 	}
+		.tabpanels__nav__select{
+			/*margin: 0 10px;*/
+		    width: 100%;
+		    background-color: #fff;
+		    background-repeat: repeat-x;
+		    border-radius: 5px;
+		    -moz-background-clip: padding;
+		    -webkit-background-clip: padding-box;
+		    background-clip: padding-box;
+		    font-size: 1.2rem;
+		    padding: 5px;
+		    line-height: inherit;
+		    border: none;
+		    font-weight: 100;
+		    outline: 0;
+		    color: #3e3e3e;
+		    text-align: left;
+		    display: inline-block;
+		    cursor: pointer;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none;
+			box-shadow: 0px 2px 2px #9fa3a4;
+			padding:10px 0 10px 25px;
+		}
+		.tabpanels__nav__select__wrapper{
+			position:relative;
+		}
+			.tabpanels__nav__select__wrapper::after{
+				content:"";
+				background-image: url(img/menu-arrow-active.svg);
+			    background-repeat:no-repeat;
+			    display:block;
+			    top: 20px;
+	    		right: 20px;
+			    position:absolute;
+			    height:20px;
+			    width:20px;
+			}
 		.tabpanels__container__panels {
 		    width: 80%;
 		    margin: 0 auto;
 		}
 			.tabpanels__panel{
-			padding-left:0;
-			padding-top:0;
-		}
+				padding-left:0;
+				padding-top:0;
+			}
 			.events__carouselbox__content__item{
 				width:100%;
 			}
+		.events__carouselbox__buttons{
+			text-align: center;
+			text-indent:initial;		
+		}
 	/** Corporate contact **/
-	.hpcoporate__contact__btn{
+	.hpcorporate__contact__btn{
 		margin-top:0;
 	}
-		.hpcoporate__contact p{
+		.hpcorporate__contact p{
 			text-align:center;
 		}
-		.hpcoporate__contact__btn .btn--contact{
+		.hpcorporate__contact__btn .btn--contact{
 			display:block;
 			text-align:center;
 		}
 	/** Footer **/
+	.footer{
+		padding:20px 40px;
+	}
 	.footernav{
 		display:block;
 	}
@@ -886,10 +1031,11 @@ header{
 			/*text-align:center;*/
 		}
 		.footernav__group {
-		    width: 45%;
+		    width: 40%;
 		    display: inline-block;
 		    text-align:left;
-		    margin: 0 10px !important;
+		    /*margin: 0 10px !important;*/
+		    margin: 0 15px !important;
 		}
 		.footernav__group--products-list{
 			width:100%;
@@ -897,6 +1043,9 @@ header{
 		.footernav__group--products-list ul{
 			width:45% !important;
 			margin:0;
+		}
+		.footernav__group__list__item > a{
+			white-space:nowrap;
 		}
 	.footerapp{
 		text-align:center;
