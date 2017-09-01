@@ -9,6 +9,14 @@ $(document).ready(function(){
 				$('.headernav__menu__item--submenu').toggleClass('submenu-visible');
 			});
 		}
+		$(window).on('resize', function(){
+			console.log('resize')
+			if($(document).width() < 771){
+				$('.headernav__menu__item--submenu a').on('click', function(){
+					$('.headernav__menu__item--submenu').toggleClass('submenu-visible');
+				});
+			}
+		});
 
 
 	/** Corporate nav**/
